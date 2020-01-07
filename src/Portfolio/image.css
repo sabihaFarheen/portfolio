@@ -1,0 +1,474 @@
+html,
+body{
+        
+   height: 100%;
+    
+
+}
+.wheels,.seat,.foot,.bb,.rods,.handle,.seatrod,.circle,.cc{
+    position: relative;
+}
+.wheels::after,
+.seat::after,
+.foot::after,
+.bb::after,
+.rods::after,
+.handle::after,
+.seatrod::after,
+.circle::after,
+.cc::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+
+
+.d-table-row{
+    display: table-row;
+    height: 100%;
+    
+}
+.d-table-cell{
+    display: table-cell;
+     text-align: center;
+    vertical-align: middle;
+}
+.bicycle{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.wheel{
+    border:10px solid black;
+    border-radius: 50%;
+    width:5rem;
+    height:5rem;
+   overflow: hidden;
+    animation:wheel_anim 10s linear infinite;
+    display: inline-block;
+}
+.wheels{
+    display: inline-block;
+    width: 20rem;
+}
+
+#w1{
+    position: relative;
+    margin-right: 3.5rem;
+    left: 0.1rem;
+    top: -15.6rem;
+}
+#w2{
+    position: relative;
+    top: -15.6rem;
+    margin-left: 3.5rem;
+    left: 1.6rem;
+}
+.d-inlineblock{
+    display: inline-block;
+}
+.wheelrods{
+    width: 0.1rem;
+    height: 1.8rem;
+    background-color: gray;
+}
+@keyframes wheel_anim{
+    from{
+      transform: rotate(360deg);
+    }
+    
+    to{
+      transform: rotate(0deg);
+    }
+  }
+#wr1,
+#wr1-b{
+    position: relative;
+    left: 1.7rem;
+    top: 0rem;
+    transform: rotate(0deg);
+}
+#wr2,
+#wr2-b{
+    position: relative;
+    left: 2.2rem;
+    top: -1.7rem;
+    transform: rotate(30deg);
+}
+#wr3,
+#wr3-b{
+    position: relative;
+    left: 2.6rem;
+    top: -3.1rem;
+    transform: rotate(60deg);
+}
+#wr4,
+#wr4-b{
+    position: relative;
+    left: 0.9rem;
+    top: -4.4rem;
+    transform: rotate(90deg);
+}
+#wr5,
+#wr5-b{
+    position: relative;
+    left: 0.86rem;
+    top: -6.7rem;
+    transform: rotate(120deg);
+}
+#wr6,
+#wr6-b{
+    position: relative;
+    left: 1.2rem;
+    top: -8.9rem;
+    transform: rotate(150deg);
+}
+#wr7,
+#wr7-b{
+    position: relative;
+    left: 1.7rem;
+    top: -8.8rem;
+    transform: rotate(180deg);
+}
+#wr8,
+#wr8-b{
+    position: relative;
+    left: 1.3rem;
+    top: -10.9rem;
+    transform: rotate(210deg);
+}
+#wr9,
+#wr9-b{
+    position: relative;
+    left: 0.9rem;
+    top: -12.9rem;
+    transform: rotate(240deg);
+}
+#wr10,
+#wr10-b{
+    position: relative;
+    left: 2.7rem;
+    top: -15.15rem;
+    transform: rotate(270deg);
+}
+#wr11,
+#wr11-b{
+    position: relative;
+    left: 2.7rem;
+    top: -16.4rem;
+    transform: rotate(300deg);
+}
+#wr12,
+#wr12-b{
+   position: relative;
+   left: 2.2rem;
+   top: -17.9rem;
+    transform: rotate(330deg);
+}
+.hand{
+    border: 2px solid black;
+    width: 0.4rem;
+    height: 3rem;
+    background-color: black;
+    border-radius: 7px;
+}
+#h1{
+    position: relative;
+    top: 1.8rem;
+    left: -1.2rem;
+    transform: rotate(70deg);
+}
+.top{
+    border: 2px solid black;
+    width: 0.4rem;
+    height: 7.5rem;
+    z-index: 2;
+    background-color: black;
+    border-radius: 7px;
+}
+#t1{
+    position: relative;
+    top: 7.5rem;
+    left: -3.7rem;
+    transform: rotate(30deg);
+}
+.rod{
+    border: 2px solid black;
+    width: 0.4rem;
+    height: 5.55rem;
+    background-color: black;
+    
+}
+#r1{
+    position: relative;
+    top: 8rem;
+    left: -2.3rem;
+    transform: rotate(-45deg);
+}
+#r2{
+    position: relative;
+    top: 5.2rem;
+    left: -1.25rem;
+    transform: rotate(90deg);
+}
+.sea{
+    width: 0.8rem;
+    height: 3.5rem;
+    border-radius: 7px;
+    background-color: cadetblue;
+    z-index:2;
+}
+.srod{
+    border: 2px solid black;
+    width: 0.4rem;
+    height: 6rem;
+    background-color: black;
+}
+#sr1{
+    position: relative;
+    top: 7.5rem;
+    left: 0.5rem;
+    transform: rotate(20deg);
+}
+#s1{
+    position: relative;
+    top: -11.5rem;
+    left: 12rem;
+    transform: rotate(90deg);
+}
+.back{
+    border: 2px solid black;
+    width: 0.4rem;
+    height: 7rem;
+    z-index: 2;
+    background-color: black;
+    border-radius: 7px;
+}
+#bl1{
+    position: relative;
+    left: 14.8rem;
+    top: -0.5rem;
+    transform: rotate(-55deg);
+}
+
+.bottom{
+    
+    border: 2px solid black;
+    width: 0.4rem;
+    z-index: 2;
+    height: 7rem;
+    background-color: black;
+    border-radius: 7px;
+}
+#b1{
+    position: relative;
+    top: 10.6rem;
+    left: 4.4rem;
+    transform: rotate(90deg);
+}
+.center{
+    border-radius: 50%;
+    background-color: #a52323;
+    width: 1.2rem;
+    height: 1.2rem;
+    z-index: 1;
+
+}
+#c1{
+    position: relative;
+    top: -2.6rem;
+    left: 3.4rem;
+}
+#c2{
+    position: relative;
+    top: -3.7rem;
+    left: 17rem;
+}
+.cencir{
+    border-radius: 50%;
+    background-color: #da7715;
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 2;
+}
+#cc1{
+    position: relative;
+    top: 6rem;
+    left: 9.5rem;
+}
+.foot{
+    width: 0.4rem;
+    height: 1.8rem;
+    background-color: black;
+}
+#f1{
+    position: relative;
+    top: -7.7rem;
+    left: 10rem;
+}
+.foot1{
+    width: 0.4rem;
+    height: 1rem;
+    background-color: #191818;
+}
+#f2{
+   position: relative;
+   top: -8.2rem;
+    transform: rotate(90deg);
+    left: 10rem;
+} 
+#f3{
+    position: relative;
+    top: -12rem;
+    left: 10rem;
+}
+#f4{
+    position: relative;
+    top: -14.2rem;
+    left: 10rem;
+    transform: rotate(90deg);
+}
+/* clock */
+.clock{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.clock-border{
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    width:12.5rem;
+    height:12.5rem;
+    background-color: white;
+    border:10px solid rgb(230, 226, 226);
+    border-radius:50%;
+  display:inline-block;
+}
+.sec{
+    width: 1px;
+    height: 80px;
+    border: 2px solid rgba(238, 46, 46, 0.863);
+    background-color: rgba(238, 46, 46, 0.863);
+    border-radius: 7px;
+    position: absolute;
+    left: 88px;
+    top: 21px;
+    transform-origin: bottom;
+    /* animation: sec_anim 60s linear infinite; */
+    z-index: 1;
+}
+@keyframes sec_anim{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.min{
+    width: 3px;
+    height: 70px;
+    border: 2px solid #7070d4;
+    background-color: #7070d4;
+    border-radius: 7px;
+    position: absolute;
+    left: 87px;
+    top: 31px;
+    transform-origin: bottom;
+    /* animation: min_anim 3600s linear infinite; */
+    z-index: 1;
+}
+@keyframes min_anim{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.hour{
+    width: 7px;
+    height: 50px;
+    border: 2px solid rgb(23, 150, 23);
+    background-color: rgb(23, 150, 23);
+    border-radius: 7px;
+    position: absolute;
+    left: 85px;
+    top: 50px;
+    transform-origin: bottom;
+    /* animation: hour_anim 86400s linear infinite; */
+    z-index: 3;
+}
+@keyframes hour_anim{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{
+    position: absolute;
+    display:inline-block;
+    z-index:0;
+    font-size:1.5em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.one{
+    top: 12px;
+    left: 133px;
+}
+.two{
+    top: 40px;
+    left: 157px;
+}
+.three{
+    top: 80px;
+    left: 164px;
+}
+.four{
+    top: 118px;
+    left: 151px;
+}
+.five{
+    top: 142px;
+    left: 123px;
+}
+.six{
+    top: 154px;
+    left: 84px;
+}
+.seven{
+    top: 142px;
+    left: 44px;
+}
+.eight{
+    top: 113px;
+    left: 15px;
+}
+.nine{
+    top: 78px;
+    left: 0px;
+}
+.ten{
+    top: 40px;
+    left: 7px;
+}
+.eleven{
+    top: 10px;
+    left: 36px;
+}
+.twelve{
+    top: 0px;
+    left: 78px;
+}
+
+@media only screen and (max-width: 768px){
+    .clock-border{
+        top:-7rem;
+    }
+}
